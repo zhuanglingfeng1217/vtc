@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<script src="js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+		</script>
+		<style type="text/css">
+			.submit-msg{
+				width: 80%;
+				padding: 10px 0;
+				margin-left: 10%;
+				margin-top: 15px;
+			}
+			.kd-banner{
+				width: 100%;
+				height: 80px;
+				background-image:url(img/kd-banner.jpg);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+			.kd-banner>p{
+				color: #000000;
+				font-size: 20px;
+				font-weight: bolder;
+				text-align: center;
+				line-height: 80px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">标题</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="mui-scroll-wrapper" style="top: 44px;">
+		        <div class="mui-scroll">
+		            <!--这里放置真实显示的DOM内容-->
+		            <!--背景图-->
+		            <div class="kd-banner">
+		            	<!--<p>快递来了</p>-->
+		            </div>
+		            <div class="mui-input-group">
+		                <div class="mui-input-row">
+		                    <label>input:</label>
+		                    <input type="text" placeholder="input">
+		                </div>
+		                <div class="mui-input-row">
+		                    <label>input:</label>
+		                    <select name="">
+		                    	<option value="1">请选择</option>
+		                    	<option value="1">0~5斤</option>
+		                    	<option value="1">5~10斤</option>
+		                    	<option value="1">10~15斤</option>
+		                    	<option value="1">15斤以上</option>
+		                    </select>
+		                </div>
+		                <div class="mui-input-row">
+		                    <label>input:</label>
+		                    <select name="">
+		                    	<option value="1">请选择</option>
+		                    	<option value="1">0~5斤</option>
+		                    	<option value="1">5~10斤</option>
+		                    	<option value="1">10~15斤</option>
+		                    	<option value="1">15斤以上</option>
+		                    </select>
+		                </div>
+		            </div>
+		        	<button type="button" class="mui-btn mui-btn-blue submit-msg">确认</button>
+		        </div>
+		    </div>
+		    
+		</div>
+		<script type="text/javascript">
+			mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			});
+		</script>
+	</body>
+
+</html>
